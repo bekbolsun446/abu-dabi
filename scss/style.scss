@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$inter: 'Inter', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $inter;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.hero_section {
+  min-height: 700px;
+  background: url("../img/hero-bg.png") no-repeat center/cover;
+  padding: 20px 0;
+  position: relative;
+  @media screen and (max-width: 575px) {
+    min-height: 80vh;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero {
+    margin-top: 100px;
+    @media screen and (min-width: 992px) {
+      padding-right: 30%;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 48px;
+    }
+
+    .heroTitle {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 51px;
+      letter-spacing: 0.46px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #83276B;
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        line-height: 38px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 24px;
+      }
+    }
+
+    .heroText {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.46px;
+      margin-bottom: 28px;
+      color: #83276B;
+      @media screen and (min-width: 992px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .heroLink {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: 0.46px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: linear-gradient(100.58deg, #C017A2 0%, #83276B 100%);
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      padding: 4px 20px;
+    }
+  }
+}
+
+.about {
+  margin-top: 70px;
+  display: flex;
+  position: relative;
+  height: 500px;
+  @media screen and (max-width: 991px) {
+    margin-bottom: 450px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 250px;
+  }
+
+  .about_content {
+    width: 33%;
+    padding: 69px 49px;
+    background: linear-gradient(180deg, #C017A2 0%, #83276B 100%);
+    @media screen and (max-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+    @media screen and (min-width: 1700px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      position: absolute;
+      top: 100%;
+    }
+
+    .aboutTitle {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 51px;
+      letter-spacing: 0.46px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    .aboutText {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.46px;
+      color: #FFFFFF;
+    }
+  }
+
+  .about-img {
+    width: 66%;
+    height: inherit;
+    object-fit: cover;
+    @media screen and (min-width: 1700px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+}
+
+.culture {
+  margin-top: 70px;
+
+  .culture_item {
+    display: flex;
+    position: relative;
+    height: 500px;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 450px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 100%;
+    }
+
+    .culture_itemImg {
+      width: 66%;
+      height: inherit;
+      object-fit: cover;
+      border-radius: 10px 0 0 10px;
+      @media screen and (min-width: 1700px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 1199px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+      }
+      @media screen and (max-width: 767px) {
+        height: 250px;
+      }
+    }
+
+    .culture_item_content {
+      width: 33%;
+      padding: 36px 20px;
+      background: linear-gradient(180deg, #C017A2 0%, #83276B 100%);
+      @media screen and (max-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 50px;
+      }
+      @media screen and (min-width: 1700px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 1199px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        height: 400px;
+      }
+      @media screen and (max-width: 576px) {
+        height: 450px;
+      }
+
+      .cultureTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 51px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.46px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+
+      .culture_itemTitle {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.46px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+      }
+
+      .culture_itemText {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.46px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+    width: 26px;
+    height: 26px;
+    background: #C017A2;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: url("../img/prev-arrow.svg") no-repeat center;
+    background-color: #C017A2;
+    bottom: 24px;
+    @media screen and (max-width: 991px) {
+      bottom: auto;
+      top: 225px;
+    }
+    @media screen and (max-width: 767px) {
+      top: 125px;
+    }
+  }
+
+  .slick-next {
+    transform: rotate(180deg);
+  }
+
+}
+
+.travel {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 350px;
+  background: url("../img/travel-bg.png") no-repeat center/cover;
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 584px;
+  }
+
+  .travel_container {
+    height: 100%;
+    @media screen and (max-width: 767px) {
+      position: relative;
+      margin: 0;
+      max-width: 100%;
+    }
+
+    .travel_content {
+      height: 100%;
+      position: relative;
+      padding: 41px 31px;
+      width: 40%;
+      @media screen and (max-width: 991px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 767px) {
+        width: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        height: auto;
+      }
+      @media screen and (max-width: 575px) {
+        padding: 41px 8px;
+      }
+
+      .travel_contentBg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(192, 23, 162, 0) 0%, #C017A2 100%);
+        mix-blend-mode: multiply;
+        z-index: 0;
+      }
+
+      .travelTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.46px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        position: sticky;
+        z-index: 2;
+        margin-bottom: 8px;
+        @media screen and (min-width: 992px) {
+          color: #83276B;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 21px;
+        }
+      }
+
+      .travelText {
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.46px;
+        color: #FFFFFF;
+        position: sticky;
+        z-index: 2;
+        margin-bottom: 31px;
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
+
+        span {
+          display: block;
+          padding: 12px 0;
+          @media screen and (max-width: 767px) {
+            padding: 16px 0;
+          }
+        }
+      }
+
+      .travelLink {
+        background: linear-gradient(100.58deg, #C017A2 0%, #83276B 100%);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.46px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 4px 20px;
+        position: sticky;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+#footer {
+  .footer {
+    border-top: 4px solid #83276B;
+    padding-top: 26px;
+    padding-bottom: 100px;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 40px;
+    }
+
+    .footer_logo {
+      img {
+        width: 200px;
+        height: 135px;
+        object-fit: cover;
+      }
+
+      .footer_about {
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.46px;
+        color: #000000;
+        margin-top: 8px;
+        @media screen and (min-width: 575px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 767px) {
+          margin-top: 21px;
+        }
+      }
+    }
+
+    .footer_contact {
+      margin-top: 24px;
+      @media screen and (max-width: 767px) {
+        margin-top: 40px;
+      }
+
+      .contactTitle {
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 0.46px;
+        color: #83276B;
+      }
+
+      .contact_item {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        margin-top: 20px;
+
+        .footerIcon {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #AF0084;
+          color: white;
+        }
+
+        p {
+          font-family: $open-sans;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18px;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.46px;
+          color: #000000;
+        }
+
+        .for_tourist {
+          position: relative;
+
+          span {
+            position: absolute;
+            top: -14px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_foot {
+    background: #83276B;
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 51px;
+      text-align: center;
+      letter-spacing: 0.46px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
