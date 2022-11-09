@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .hero_section .header .header_logo {
     width: 110px;
     height: 38px;
@@ -130,12 +130,18 @@ h1, h2, h3, h4, h5 {
 }
 @media screen and (max-width: 991px) {
   .about {
-    margin-bottom: 450px;
+    margin-bottom: 400px;
   }
 }
 @media screen and (max-width: 767px) {
   .about {
     height: 250px;
+    margin-bottom: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about {
+    margin-bottom: 400px;
   }
 }
 .about .about_content {
@@ -214,6 +220,16 @@ h1, h2, h3, h4, h5 {
 .attraction {
   margin-top: 100px;
 }
+@media screen and (max-width: 767px) {
+  .attraction {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .attraction {
+    margin-top: 70px;
+  }
+}
 .attraction .attrTitle {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -224,7 +240,7 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   color: #83276B;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .attraction .attrTitle {
     font-size: 20px;
     line-height: 28px;
@@ -237,7 +253,7 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
   border-bottom: 2px solid #A2A2A2;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .attraction .attr_content .attr_nav {
     display: flex;
     align-items: center;
@@ -260,7 +276,7 @@ h1, h2, h3, h4, h5 {
   color: #323232;
   background: none;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .attraction .attr_content .attr_nav .attr_nav-item {
     font-size: 15px;
     line-height: 25px;
@@ -289,7 +305,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 10px;
   width: 100%;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .attraction .attr_content .attr_body .attr_body_item .attr_slide_item {
     height: 200px;
   }
@@ -322,7 +338,7 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   color: #83276B;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .attraction .attr_content .attr_body .attr_body_item .attr_slide_item .attr_itemName {
     padding: 8px 12px;
     font-size: 12px;
@@ -344,7 +360,7 @@ h1, h2, h3, h4, h5 {
   background: url(../img/prev-arrow.svg) no-repeat center;
   background-color: #C017A2;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .attraction .attr_content .attr_body .attr_body_item .slick-arrow {
     display: none !important;
   }
@@ -439,7 +455,7 @@ h1, h2, h3, h4, h5 {
 }
 @media screen and (max-width: 576px) {
   .culture .culture_item .culture_item_content {
-    height: 450px;
+    height: 430px;
   }
 }
 .culture .culture_item .culture_item_content .cultureTitle {
@@ -453,6 +469,12 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .culture .culture_item .culture_item_content .cultureTitle {
+    margin-bottom: 10px;
+    line-height: 28px;
+  }
 }
 .culture .culture_item .culture_item_content .culture_itemTitle {
   font-style: normal;

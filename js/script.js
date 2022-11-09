@@ -93,7 +93,10 @@ legendButton.addEventListener("click", () => {
     legendBody.classList.remove('attr_bodyNotActive')
     relaxBody.classList.add('attr_bodyNotActive')
     adventureBody.classList.add('attr_bodyNotActive')
-    $('.legendBody').slick();
+    $('.legendBody').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 })
 //relax
 relaxButton.addEventListener("click", () => {
@@ -104,7 +107,10 @@ relaxButton.addEventListener("click", () => {
     legendBody.classList.add('attr_bodyNotActive')
     relaxBody.classList.remove('attr_bodyNotActive')
     adventureBody.classList.add('attr_bodyNotActive')
-    $('.relaxBody').slick();
+    $('.relaxBody').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 })
 
 adventureButton.addEventListener("click", () => {
@@ -115,11 +121,17 @@ adventureButton.addEventListener("click", () => {
     legendBody.classList.add('attr_bodyNotActive')
     relaxBody.classList.add('attr_bodyNotActive')
     adventureBody.classList.remove('attr_bodyNotActive')
-    $('.adventureBody').slick();
+    $('.adventureBody').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 })
 
 // slide
-$('.legendBody').slick();
+$('.legendBody').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
 
 //=========================ATTRACTION END=====================
 
