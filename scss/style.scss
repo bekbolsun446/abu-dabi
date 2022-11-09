@@ -40,6 +40,23 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .header_logo {
+      @media screen and (max-width: 766px) {
+        width: 110px;
+        height: 38px;
+        &:last-child {
+          width: 64px;
+          height: 42px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
   .hero {
@@ -175,8 +192,163 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.attraction {
+  margin-top: 100px;
+
+
+  .attrTitle {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    letter-spacing: 0.46px;
+    text-transform: uppercase;
+    color: #83276B;
+    @media screen and (max-width: 766px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .attr_content {
+    margin-top: 20px;
+
+    .attr_nav {
+      display: inline-block;
+      border-bottom: 2px solid #A2A2A2;
+      @media screen and (max-width: 766px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .attr_nav-item {
+        position: relative;
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        padding: 3px 0;
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.46px;
+        text-transform: uppercase;
+        color: #323232;
+        background: none;
+        @media screen and (max-width: 766px) {
+          font-size: 15px;
+          line-height: 25px;
+          margin-right: 0;
+        }
+      }
+
+      .attr_btnActive {
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          height: 4px;
+          width: 100%;
+          left: 0;
+          background: #C017A2;
+        }
+      }
+    }
+
+    .attr_body {
+      margin-top: 20px;
+
+      .attr_body_item {
+        border-radius: 10px;
+        overflow: hidden;
+
+        .attr_slide_item {
+          position: relative;
+          height: 400px;
+          border-radius: 10px;
+          width: 100%;
+          @media screen and (max-width: 766px) {
+            height: 200px;
+          }
+
+          .attr_itemImg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+
+          .attr_itemName {
+            position: absolute;
+            width: 100%;
+            background: white;
+            bottom: 0;
+            left: 0;
+            padding: 24px 30px;
+            border-radius: 10px;
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.46px;
+            text-transform: uppercase;
+            color: #83276B;
+            @media screen and (max-width: 766px) {
+              padding: 8px 12px;
+              font-size: 12px;
+              line-height: 25px;
+            }
+          }
+        }
+
+        .slick-arrow {
+          z-index: 10;
+          position: absolute;
+          bottom: 24px;
+          right: 70px;
+          border: none;
+          outline: none;
+          font-size: 0;
+          width: 26px;
+          height: 26px;
+          border-radius: 50%;
+          background: #C017A2;
+          background: url(../img/prev-arrow.svg) no-repeat center;
+          background-color: #C017A2;
+          @media screen and (max-width: 766px) {
+            display: none !important;
+          }
+        }
+
+        .slick-next {
+          right: 26px;
+          transform: rotate(180deg);
+        }
+
+      }
+
+      .attr_bodyNotActive {
+        display: none;
+      }
+    }
+  }
+}
+
+
 .culture {
   margin-top: 70px;
+  @media screen and (max-width: 767px) {
+    margin-top: 36px;
+  }
 
   .culture_item {
     display: flex;

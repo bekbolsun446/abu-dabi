@@ -71,6 +71,59 @@ if ($(window).width() < 992) {
 //===================CULTURE END========================
 
 
+//=========================ATTRACTION=====================
+
+//buttons
+const legendButton = document.querySelector("#legendButton");
+const relaxButton = document.querySelector("#relaxButton");
+const adventureButton = document.querySelector("#adventureButton");
+
+
+//bodies
+const legendBody = document.querySelector("#legendBody");
+const relaxBody = document.querySelector("#relaxBody");
+const adventureBody = document.querySelector("#adventureBody");
+
+//legend
+legendButton.addEventListener("click", () => {
+    legendButton.classList.add('attr_btnActive');
+    relaxButton.classList.remove('attr_btnActive');
+    adventureButton.classList.remove('attr_btnActive');
+
+    legendBody.classList.remove('attr_bodyNotActive')
+    relaxBody.classList.add('attr_bodyNotActive')
+    adventureBody.classList.add('attr_bodyNotActive')
+    $('.legendBody').slick();
+})
+//relax
+relaxButton.addEventListener("click", () => {
+    legendButton.classList.remove('attr_btnActive');
+    relaxButton.classList.add('attr_btnActive');
+    adventureButton.classList.remove('attr_btnActive');
+
+    legendBody.classList.add('attr_bodyNotActive')
+    relaxBody.classList.remove('attr_bodyNotActive')
+    adventureBody.classList.add('attr_bodyNotActive')
+    $('.relaxBody').slick();
+})
+
+adventureButton.addEventListener("click", () => {
+    legendButton.classList.remove('attr_btnActive');
+    relaxButton.classList.remove('attr_btnActive');
+    adventureButton.classList.add('attr_btnActive');
+
+    legendBody.classList.add('attr_bodyNotActive')
+    relaxBody.classList.add('attr_bodyNotActive')
+    adventureBody.classList.remove('attr_bodyNotActive')
+    $('.adventureBody').slick();
+})
+
+// slide
+$('.legendBody').slick();
+
+//=========================ATTRACTION END=====================
+
+
 
 
 

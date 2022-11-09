@@ -39,6 +39,21 @@ h1, h2, h3, h4, h5 {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 766px) {
+  .hero_section .header .header_logo {
+    width: 110px;
+    height: 38px;
+  }
+  .hero_section .header .header_logo:last-child {
+    width: 64px;
+    height: 42px;
+  }
+}
+.hero_section .header .header_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .hero_section .hero {
   margin-top: 100px;
 }
@@ -196,8 +211,159 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.attraction {
+  margin-top: 100px;
+}
+.attraction .attrTitle {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 51px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  color: #83276B;
+}
+@media screen and (max-width: 766px) {
+  .attraction .attrTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.attraction .attr_content {
+  margin-top: 20px;
+}
+.attraction .attr_content .attr_nav {
+  display: inline-block;
+  border-bottom: 2px solid #A2A2A2;
+}
+@media screen and (max-width: 766px) {
+  .attraction .attr_content .attr_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.attraction .attr_content .attr_nav .attr_nav-item {
+  position: relative;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  padding: 3px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  color: #323232;
+  background: none;
+}
+@media screen and (max-width: 766px) {
+  .attraction .attr_content .attr_nav .attr_nav-item {
+    font-size: 15px;
+    line-height: 25px;
+    margin-right: 0;
+  }
+}
+.attraction .attr_content .attr_nav .attr_btnActive::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background: #C017A2;
+}
+.attraction .attr_content .attr_body {
+  margin-top: 20px;
+}
+.attraction .attr_content .attr_body .attr_body_item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.attraction .attr_content .attr_body .attr_body_item .attr_slide_item {
+  position: relative;
+  height: 400px;
+  border-radius: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 766px) {
+  .attraction .attr_content .attr_body .attr_body_item .attr_slide_item {
+    height: 200px;
+  }
+}
+.attraction .attr_content .attr_body .attr_body_item .attr_slide_item .attr_itemImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.attraction .attr_content .attr_body .attr_body_item .attr_slide_item .attr_itemName {
+  position: absolute;
+  width: 100%;
+  background: white;
+  bottom: 0;
+  left: 0;
+  padding: 24px 30px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
+  color: #83276B;
+}
+@media screen and (max-width: 766px) {
+  .attraction .attr_content .attr_body .attr_body_item .attr_slide_item .attr_itemName {
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+.attraction .attr_content .attr_body .attr_body_item .slick-arrow {
+  z-index: 10;
+  position: absolute;
+  bottom: 24px;
+  right: 70px;
+  border: none;
+  outline: none;
+  font-size: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #C017A2;
+  background: url(../img/prev-arrow.svg) no-repeat center;
+  background-color: #C017A2;
+}
+@media screen and (max-width: 766px) {
+  .attraction .attr_content .attr_body .attr_body_item .slick-arrow {
+    display: none !important;
+  }
+}
+.attraction .attr_content .attr_body .attr_body_item .slick-next {
+  right: 26px;
+  transform: rotate(180deg);
+}
+.attraction .attr_content .attr_body .attr_bodyNotActive {
+  display: none;
+}
+
 .culture {
   margin-top: 70px;
+}
+@media screen and (max-width: 767px) {
+  .culture {
+    margin-top: 36px;
+  }
 }
 .culture .culture_item {
   display: flex;
