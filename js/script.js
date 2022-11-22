@@ -132,7 +132,6 @@ $('.legendBody').slick({
     autoplay: true,
     autoplaySpeed: 2000,
 });
-
 //=========================ATTRACTION END=====================
 
 
